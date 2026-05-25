@@ -113,8 +113,8 @@ class JyGetGUI:
     # ── UI Builders ────────────────────────────────────────────────
 
     def _build_topbar(self):
-        frame = tk.Frame(self.root, bg=BG, padx=PADDING, pady=(PADDING, 2))
-        frame.grid(row=0, column=0, sticky="ew")
+        frame = tk.Frame(self.root, bg=BG)
+        frame.grid(row=0, column=0, sticky="ew", padx=PADDING, pady=(PADDING, 2))
         frame.columnconfigure(1, weight=1)
 
         # Logo / title
@@ -150,8 +150,8 @@ class JyGetGUI:
         entry.bind("<Return>", lambda e: self._on_add_magnet())
 
     def _build_tasklist(self):
-        container = tk.Frame(self.root, bg=BG, padx=PADDING, pady=(4, 0))
-        container.grid(row=1, column=0, sticky="nsew")
+        container = tk.Frame(self.root, bg=BG)
+        container.grid(row=1, column=0, sticky="nsew", padx=PADDING, pady=(4, 0))
         container.columnconfigure(0, weight=1)
         container.rowconfigure(0, weight=1)
 
@@ -187,8 +187,8 @@ class JyGetGUI:
         self.tree.bind("<Button-3>", self._show_context_menu)
 
     def _build_bottombar(self):
-        frame = tk.Frame(self.root, bg=SURFACE, padx=PADDING, pady=(4, PADDING))
-        frame.grid(row=2, column=0, sticky="ew")
+        frame = tk.Frame(self.root, bg=SURFACE)
+        frame.grid(row=2, column=0, sticky="ew", padx=PADDING, pady=(4, PADDING))
         frame.columnconfigure(5, weight=1)
 
         self.stats_vars = {}
@@ -480,8 +480,17 @@ class JyGetGUI:
 
 def main():
     root = tk.Tk()
-    app = JyGetGUI(root)
-    root.protocol("WM_DELETE_WINDOW", app.on_close)
+    try:
+        app = JyGetGUI(root)
+        root.protocol("WM_DELETE_WINDOW", app.on_close)
+    except Exception as e:
+        import traceback
+        msg = f"JyGet startup failed:\n{traceback.format_exc()}"
+        print(msg)
+        from tkinter import messagebox
+        messagebox.showerror("JyGet Error", msg)
+        root.destroy()
+        return
     root.mainloop()
 
 
