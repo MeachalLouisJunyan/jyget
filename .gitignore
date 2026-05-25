@@ -1,0 +1,4 @@
+__pycache__/
+*.db
+downloads/
+aria2c.exe
