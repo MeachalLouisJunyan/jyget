@@ -4,12 +4,7 @@
 
 > 🚀 **比迅雷更快，比夸克更干净，比百度网盘更自由 —— 二次元磁力下载器** 🚀
 
-[![GitHub Stars](https://img.shields.io/github/stars/MeachalLouisJunyan/jyget?style=for-the-badge&logo=github&color=ff69b4)](https://github.com/MeachalLouisJunyan/jyget)
-[![License MIT](https://img.shields.io/badge/License-MIT-ff69b4?style=for-the-badge&logo=open-source-initiative&color=ff69b4)](https://opensource.org/licenses/MIT)
-[![Python 3.9+](https://img.shields.io/badge/Python-3.9+-ff69b4?style=for-the-badge&logo=python&logoColor=white&color=ff85a2)](https://python.org)
-[![Windows](https://img.shields.io/badge/Windows-0078D6?style=for-the-badge&logo=windows&logoColor=white)]()
-[![macOS](https://img.shields.io/badge/macOS-000000?style=for-the-badge&logo=apple&logoColor=white)]()
-[![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)]()
+[⭐ GitHub Stars] [📜 MIT License] [🐍 Python 3.9+] [🪟 Windows] [🍎 macOS] [🐧 Linux]
 
 </div>
 
@@ -192,7 +187,7 @@ jyget/
 
 > 🎀 **JyGet** — 让下载回归纯粹，用可爱点亮每一天 💖
 
-[![GitHub](https://img.shields.io/badge/GitHub-MeachalLouisJunyan/jyget-ff69b4?style=for-the-badge&logo=github)](https://github.com/MeachalLouisJunyan/jyget)
+📂 [GitHub — MeachalLouisJunyan/jyget](https://github.com/MeachalLouisJunyan/jyget)
 
 ⭐ **如果 JyGet 让你感到快乐，请给它一颗 Star ~** ⭐
 
